@@ -124,9 +124,10 @@ def main():
         # 推論で得られたクラス番号(初期値は0)によって出力結果を分岐
         if classNo == 0:
             st.subheader(f"これは{pred0}％の確率で「猫」です！")
-        else:
+        elif classNo == 1:
             st.subheader(f"これは{pred1}％の確率で「犬」です！")
-
+        elif classNo == 2:
+            st.subheader(f"これは{pred2}％の確率で「アザラシ」です！")
 
 # mainの起動
 if __name__ == "__main__":
